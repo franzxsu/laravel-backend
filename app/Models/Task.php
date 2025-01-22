@@ -10,7 +10,7 @@ class Task extends Model
     use HasFactory;
 
     protected $table = 'housekeeping_tasks';
-
+    protected $primaryKey = 'task_id';
     protected $fillable = [
         'employee_id', 
         'task_name', 

@@ -18,7 +18,7 @@ class TaskController extends Controller
         $validated = $request->validate([
             'task_name' => 'required|string|max:255',
             'task_description' => 'required|string',
-            'employee_id' => 'required|integer',
+            'employee_id' => 'integer', //NOT REQUIRED!!
             'stats' => 'required|string',
         ]);
 
